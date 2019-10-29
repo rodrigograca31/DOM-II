@@ -66,3 +66,10 @@ Array.from(document.querySelectorAll('a')).forEach(function (elem) {
 		event.preventDefault();
 	});
 });
+
+
+window.addEventListener("dblclick", event => {
+	var logo = document.querySelector("body");
+	
+	TweenLite.to(logo, 1, { backgroundColor: "black", color: "white" });
+});
